@@ -19,15 +19,29 @@ students = [
 	"Norman Bates"
 ]
 
-puts "The students of Makers Apprecticeship Academy"
-puts "-------------"
 
-students.each do |student|
-	puts student
+
+def print_header
+	puts "The students of Makers Apprecticeship Academy"
+	puts "-------------"
+end
+def print (students)
+	students.each do |student|
+		puts student
+	end
+
 end
 
+def print_footer (students)
+	puts "Overall, we have #{students.count} great students."
+end
+
+# Now call the methods
+print_header
+print (students)
+print_footer (students)
 
 
-## USE OF PRINT INSTEAD OF PUTS
 
-puts "Overall, we have #{students.count} great students"
+
+
