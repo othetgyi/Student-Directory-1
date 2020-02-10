@@ -1,4 +1,5 @@
 
+## STUDENT NAMES
 
 puts "The students of Makers Apprecticeship Academy"
 puts "-------------"
@@ -13,3 +14,9 @@ puts "Nancy Drew"
 puts "The Joker"
 puts "Joffrey Baratheon"
 puts "Norman Bates"
+
+## USE OF PRINT INSTEAD OF PUTS
+
+print "Overall, we have"
+print 11
+print "great students"
