@@ -6,17 +6,17 @@
 # Students in an Array
 
 students = [
-	"Bruce Wayne", 
-	"Bruce Banner",
-	"Barry Allen",
-	"Iris West",
-	"Clark Kent",
-	"Dr. Who",
-	"Terminator",
-	"Nancy Drew",
-	"The Joker",
-	"Joffrey Baratheon",
-	"Norman Bates"
+	["Bruce Wayne", :February],
+	["Bruce Banner",:February],
+	["Barry Allen",:February],
+	["Iris West",:February],
+	["Clark Kent",:February],
+	["Dr. Who",:February],
+	["Terminator",:February],
+	["Nancy Drew",:February],
+	["The Joker",:February],
+	["Joffrey Baratheon",:February],
+	["Norman Bates",:February]
 ]
 
 
@@ -27,7 +27,7 @@ def print_header
 end
 def print (students)
 	students.each do |student|
-		puts student
+		puts "#{student[0]} (#{student[1]} cohort). " 
 	end
 
 end
