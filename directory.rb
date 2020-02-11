@@ -44,15 +44,20 @@ def print_header
 	puts "The students of Makers Apprecticeship Academy"
 	puts "-------------"
 end
-def print (students)
-	students.each_with_index do |student, index|
-		puts "#{index+=1}. #{student[:name]} (#{student[:cohort]} cohort). "
-		#puts "#{student[:name]} (#{student[:cohort]} cohort). "
-	end
 
+def print(students)
+	students.each do |student|
+	#	if student[:name].start_with? ("A")
+			puts "#{student[:name]} (#{student[:cohort]} cohort). "
+		end
+	end
+		#"#{index+=1}. #{student[:name]} (#{student[:cohort]} cohort). "
+		#puts "#{student[:name]} (#{student[:cohort]} cohort). "
 end
 
-def print_footer (students)
+
+
+def print_footer(students)
 	puts "Overall, we have #{students.count} great students."
 end
 
