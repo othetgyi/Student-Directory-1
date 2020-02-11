@@ -46,15 +46,19 @@ def print_header
 end
 
 def print(students)
-	students.each do |student|
+	i = 0
+	while i < students.length
+		student = students[i]
+		i+=1
 	#	if student[:name].start_with? ("A")
-	if student[:name].length < 12
+	#if student[:name].length < 12
+
 			puts "#{student[:name]} (#{student[:cohort]} cohort). "
 		end
 	end
 		#"#{index+=1}. #{student[:name]} (#{student[:cohort]} cohort). "
 		#puts "#{student[:name]} (#{student[:cohort]} cohort). "
-end
+
 
 
 
